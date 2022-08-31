@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 3fr;
+}
+
+/* Sidebar section */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    background-color: #1992D4;
+    font-weight: bold;
+}
+
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 5px;
+}
+
+
+/* main content section */
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* header section */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.greeting {
+    display: grid;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+
+/* article section */
+.article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 1/-1;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #E2E8F0;
+}
+
+.project-title,
+.announcement-title {
+    background-color: #E2E8F0;
+    padding: 1.5rem 1.5rem 0;
+
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.card {
+    height: 180px;
+    width: 400px;
+    background-color: grey;
+}
+
+.project-buttons ul {
+    display: flex
+}
+
+.news {
+    display: grid;
+    gap: 2rem;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: goldenrod;
+    padding: 1.5rem;
+}
+
+.announcements-text {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
